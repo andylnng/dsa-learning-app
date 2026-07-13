@@ -38,11 +38,20 @@ export const curriculum: Week[] = [
       'Analyse : méthode itérative, arbre de récursivité, méthode générale',
     ],
     sections: [
-      { id: 'w2-recursion', title: 'Rappel sur la récursion' },
-      { id: 'w2-arbre-recursivite', title: "L'arbre de récursivité" },
-      { id: 'w2-diviser-regner', title: 'Diviser pour régner' },
-      { id: 'w2-backtracking', title: 'Retour en arrière (backtracking)' },
-      { id: 'w2-analyse-recurrences', title: 'Analyse des récurrences : itérative, arbre, méthode générale' },
+      { id: 'w2-recursion', title: 'Rappel sur la récursion', content: 'w2-recursion', viz: 'pile-appels' },
+      {
+        id: 'w2-arbre-recursivite',
+        title: "L'arbre de récursivité",
+        content: 'w2-arbre-recursivite',
+        viz: 'arbre-recursion',
+      },
+      { id: 'w2-diviser-regner', title: 'Diviser pour régner', content: 'w2-diviser-regner' },
+      { id: 'w2-backtracking', title: 'Retour en arrière (backtracking)', content: 'w2-backtracking', viz: 'n-reines' },
+      {
+        id: 'w2-analyse-recurrences',
+        title: 'Analyse des récurrences : itérative, arbre, méthode générale',
+        content: 'w2-analyse-recurrences',
+      },
     ],
   },
   {
