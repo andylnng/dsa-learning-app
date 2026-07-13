@@ -101,11 +101,16 @@ export const curriculum: Week[] = [
     title: 'Graphes',
     notions: ['Définitions', 'BFS', 'DFS', "Chemin d'Euler", 'Chemin hamiltonien'],
     sections: [
-      { id: 'w6-graphes-intro', title: 'Introduction et définitions' },
-      { id: 'w6-bfs', title: "Recherche en largeur d'abord (BFS)" },
-      { id: 'w6-dfs', title: "Recherche en profondeur d'abord (DFS)" },
-      { id: 'w6-euler-hamilton', title: "Chemin d'Euler et chemin hamiltonien" },
-      { id: 'w6-exercices-intra', title: "Exercices pour l'examen intra" },
+      { id: 'w6-graphes-intro', title: 'Introduction et définitions', content: 'w6-graphes-intro' },
+      { id: 'w6-bfs', title: "Recherche en largeur d'abord (BFS)", content: 'w6-bfs', viz: 'bfs' },
+      { id: 'w6-dfs', title: "Recherche en profondeur d'abord (DFS)", content: 'w6-dfs', viz: 'dfs' },
+      {
+        id: 'w6-euler-hamilton',
+        title: "Chemin d'Euler et chemin hamiltonien",
+        content: 'w6-euler-hamilton',
+        viz: 'euler',
+      },
+      { id: 'w6-exercices-intra', title: "Exercices pour l'examen intra", content: 'w6-exercices-intra' },
     ],
   },
   {
@@ -113,7 +118,9 @@ export const curriculum: Week[] = [
     title: 'Examen intra',
     notions: ['Récapitulatif des semaines 1 à 6'],
     exam: true,
-    sections: [{ id: 'w7-revision-intra', title: 'Révision intra : fiches et exercices' }],
+    sections: [
+      { id: 'w7-revision-intra', title: 'Révision intra : fiches et exercices', content: 'w7-revision-intra' },
+    ],
   },
   {
     number: 8,

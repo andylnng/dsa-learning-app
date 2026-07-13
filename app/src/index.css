@@ -95,6 +95,16 @@ body {
   @apply font-semibold text-slate-900 dark:text-white;
 }
 
+.lesson details {
+  @apply my-4 rounded-xl border border-slate-200 px-4 py-3 dark:border-slate-700;
+}
+.lesson details summary {
+  @apply cursor-pointer font-medium text-indigo-700 select-none dark:text-indigo-300;
+}
+.lesson details[open] summary {
+  @apply mb-2;
+}
+
 /* Boutons des visualisations */
 .viz-btn {
   @apply rounded-lg border border-slate-200 px-3 py-1.5 text-sm text-slate-700 transition-colors hover:bg-slate-100 disabled:cursor-not-allowed disabled:opacity-40 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-800;
