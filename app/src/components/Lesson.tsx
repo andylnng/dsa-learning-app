@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import rehypeHighlight from 'rehype-highlight'
+import rehypeRaw from 'rehype-raw'
 import remarkGfm from 'remark-gfm'
 import { curriculum, findSection } from '../data/curriculum'
 import { getLessonContent } from '../data/content'
@@ -50,7 +51,7 @@ export default function Lesson() {
 
       {content ? (
         <article className="lesson">
-          <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeHighlight]}>{content}</ReactMarkdown>
+          <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw, rehypeHighlight]}>{content}</ReactMarkdown>
         </article>
       ) : (
         <article className="lesson">

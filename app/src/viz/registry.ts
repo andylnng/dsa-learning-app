@@ -12,6 +12,8 @@ import RotationViz from './RotationViz'
 import RBInsertViz from './RBInsertViz'
 import RBDeleteViz from './RBDeleteViz'
 import HashViz from './HashViz'
+import { BFSViz, DFSViz } from './GraphTraversalViz'
+import EulerViz from './EulerViz'
 
 const registry: Record<string, ComponentType> = {
   croissance: GrowthViz,
@@ -29,6 +31,9 @@ const registry: Record<string, ComponentType> = {
   'rn-insertion': RBInsertViz,
   'rn-suppression': RBDeleteViz,
   hachage: HashViz,
+  bfs: BFSViz,
+  dfs: DFSViz,
+  euler: EulerViz,
 }
 
 export function getViz(key: string): ComponentType | undefined {
