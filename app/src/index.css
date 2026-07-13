@@ -1,0 +1,101 @@
+@import 'tailwindcss';
+@import 'highlight.js/styles/github.css';
+
+:root {
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  .hljs {
+    color: #c9d1d9;
+    background: transparent;
+  }
+  .hljs-keyword,
+  .hljs-meta .hljs-keyword {
+    color: #ff7b72;
+  }
+  .hljs-title,
+  .hljs-title.class_,
+  .hljs-title.function_ {
+    color: #d2a8ff;
+  }
+  .hljs-string,
+  .hljs-meta .hljs-string {
+    color: #a5d6ff;
+  }
+  .hljs-number,
+  .hljs-literal {
+    color: #79c0ff;
+  }
+  .hljs-comment {
+    color: #8b949e;
+  }
+  .hljs-type,
+  .hljs-built_in {
+    color: #ffa657;
+  }
+}
+
+body {
+  @apply bg-white text-slate-800 antialiased dark:bg-slate-950 dark:text-slate-200;
+}
+
+/* Typographie des leçons */
+.lesson {
+  @apply max-w-3xl leading-relaxed;
+}
+.lesson h1 {
+  @apply mt-2 mb-6 text-3xl font-bold tracking-tight text-slate-900 dark:text-white;
+}
+.lesson h2 {
+  @apply mt-10 mb-4 text-xl font-semibold text-slate-900 dark:text-white;
+}
+.lesson h3 {
+  @apply mt-8 mb-3 text-lg font-semibold text-slate-900 dark:text-white;
+}
+.lesson p {
+  @apply my-4;
+}
+.lesson ul,
+.lesson ol {
+  @apply my-4 ml-6 space-y-1;
+}
+.lesson ul {
+  @apply list-disc;
+}
+.lesson ol {
+  @apply list-decimal;
+}
+.lesson code {
+  @apply rounded bg-slate-100 px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-slate-800;
+}
+.lesson pre {
+  @apply my-5 overflow-x-auto rounded-xl border border-slate-200 bg-slate-50 p-4 text-sm dark:border-slate-800 dark:bg-slate-900;
+}
+.lesson pre code {
+  @apply bg-transparent p-0;
+}
+.lesson blockquote {
+  @apply my-5 rounded-r-lg border-l-4 border-indigo-400 bg-indigo-50 px-4 py-3 dark:border-indigo-500 dark:bg-indigo-950/40;
+}
+.lesson blockquote p {
+  @apply my-0;
+}
+.lesson table {
+  @apply my-5 w-full border-collapse text-sm;
+}
+.lesson th,
+.lesson td {
+  @apply border border-slate-200 px-3 py-2 text-left dark:border-slate-700;
+}
+.lesson th {
+  @apply bg-slate-100 font-semibold dark:bg-slate-800;
+}
+.lesson strong {
+  @apply font-semibold text-slate-900 dark:text-white;
+}
+
+/* Boutons des visualisations */
+.viz-btn {
+  @apply rounded-lg border border-slate-200 px-3 py-1.5 text-sm text-slate-700 transition-colors hover:bg-slate-100 disabled:cursor-not-allowed disabled:opacity-40 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-800;
+}
