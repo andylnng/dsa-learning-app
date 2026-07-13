@@ -4,6 +4,9 @@ import { SortSelectionViz, SortInsertionViz, SortBubbleViz } from './SortingViz'
 import CallStackViz from './CallStackViz'
 import RecursionTreeViz from './RecursionTreeViz'
 import NQueensViz from './NQueensViz'
+import GameTreeViz from './GameTreeViz'
+import StackQueueViz from './StackQueueViz'
+import HeapViz from './HeapViz'
 
 const registry: Record<string, ComponentType> = {
   croissance: GrowthViz,
@@ -13,6 +16,9 @@ const registry: Record<string, ComponentType> = {
   'pile-appels': CallStackViz,
   'arbre-recursion': RecursionTreeViz,
   'n-reines': NQueensViz,
+  'arbre-de-jeu': GameTreeViz,
+  'pile-file': StackQueueViz,
+  heap: HeapViz,
 }
 
 export function getViz(key: string): ComponentType | undefined {
