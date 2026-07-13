@@ -59,10 +59,10 @@ export const curriculum: Week[] = [
     title: 'Arbres de jeu et structures de base',
     notions: ['Minimax', 'Alpha-beta', 'Heuristiques', 'Pile, file, liste', 'Heap'],
     sections: [
-      { id: 'w3-minimax', title: 'Arbres de jeu : algorithme Minimax' },
-      { id: 'w3-alphabeta', title: 'Élagage alpha-beta et heuristiques' },
-      { id: 'w3-pile-file-liste', title: 'Pile, file et liste' },
-      { id: 'w3-heap', title: 'Heap (monceau)' },
+      { id: 'w3-minimax', title: 'Arbres de jeu : algorithme Minimax', content: 'w3-minimax' },
+      { id: 'w3-alphabeta', title: 'Élagage alpha-beta et heuristiques', content: 'w3-alphabeta', viz: 'arbre-de-jeu' },
+      { id: 'w3-pile-file-liste', title: 'Pile, file et liste', content: 'w3-pile-file-liste', viz: 'pile-file' },
+      { id: 'w3-heap', title: 'Heap (monceau)', content: 'w3-heap', viz: 'heap' },
     ],
   },
   {
