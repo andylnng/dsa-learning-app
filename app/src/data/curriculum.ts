@@ -70,10 +70,15 @@ export const curriculum: Week[] = [
     title: 'Arbre binaire de recherche et arbre rouge-noir I',
     notions: ['BST : recherche, insertion, suppression', 'Rouge-noir : rotation, insertion'],
     sections: [
-      { id: 'w4-bst-operations', title: 'BST : opérations de base et recherche' },
-      { id: 'w4-bst-insertion-suppression', title: 'BST : insertion et suppression' },
-      { id: 'w4-rn-rotation', title: 'Arbre rouge-noir : rotations' },
-      { id: 'w4-rn-insertion', title: 'Arbre rouge-noir : insertion' },
+      { id: 'w4-bst-operations', title: 'BST : opérations de base et recherche', content: 'w4-bst-operations', viz: 'bst' },
+      {
+        id: 'w4-bst-insertion-suppression',
+        title: 'BST : insertion et suppression',
+        content: 'w4-bst-insertion-suppression',
+        viz: 'bst',
+      },
+      { id: 'w4-rn-rotation', title: 'Arbre rouge-noir : rotations', content: 'w4-rn-rotation', viz: 'rotation' },
+      { id: 'w4-rn-insertion', title: 'Arbre rouge-noir : insertion', content: 'w4-rn-insertion', viz: 'rn-insertion' },
     ],
   },
   {

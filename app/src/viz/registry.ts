@@ -7,6 +7,9 @@ import NQueensViz from './NQueensViz'
 import GameTreeViz from './GameTreeViz'
 import StackQueueViz from './StackQueueViz'
 import HeapViz from './HeapViz'
+import BSTViz from './BSTViz'
+import RotationViz from './RotationViz'
+import RBInsertViz from './RBInsertViz'
 
 const registry: Record<string, ComponentType> = {
   croissance: GrowthViz,
@@ -19,6 +22,9 @@ const registry: Record<string, ComponentType> = {
   'arbre-de-jeu': GameTreeViz,
   'pile-file': StackQueueViz,
   heap: HeapViz,
+  bst: BSTViz,
+  rotation: RotationViz,
+  'rn-insertion': RBInsertViz,
 }
 
 export function getViz(key: string): ComponentType | undefined {
