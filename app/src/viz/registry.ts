@@ -10,6 +10,8 @@ import HeapViz from './HeapViz'
 import BSTViz from './BSTViz'
 import RotationViz from './RotationViz'
 import RBInsertViz from './RBInsertViz'
+import RBDeleteViz from './RBDeleteViz'
+import HashViz from './HashViz'
 
 const registry: Record<string, ComponentType> = {
   croissance: GrowthViz,
@@ -25,6 +27,8 @@ const registry: Record<string, ComponentType> = {
   bst: BSTViz,
   rotation: RotationViz,
   'rn-insertion': RBInsertViz,
+  'rn-suppression': RBDeleteViz,
+  hachage: HashViz,
 }
 
 export function getViz(key: string): ComponentType | undefined {
