@@ -86,9 +86,14 @@ export const curriculum: Week[] = [
     title: 'Arbre rouge-noir II et table de hachage',
     notions: ['Rouge-noir : suppression', 'Augmentation de structure', 'Table de hachage'],
     sections: [
-      { id: 'w5-rn-suppression', title: 'Arbre rouge-noir : suppression' },
-      { id: 'w5-augmentation', title: 'Augmentation de structure' },
-      { id: 'w5-hachage', title: 'Table de hachage' },
+      {
+        id: 'w5-rn-suppression',
+        title: 'Arbre rouge-noir : suppression',
+        content: 'w5-rn-suppression',
+        viz: 'rn-suppression',
+      },
+      { id: 'w5-augmentation', title: 'Augmentation de structure', content: 'w5-augmentation' },
+      { id: 'w5-hachage', title: 'Table de hachage', content: 'w5-hachage', viz: 'hachage' },
     ],
   },
   {
