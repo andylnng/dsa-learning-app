@@ -127,10 +127,19 @@ export const curriculum: Week[] = [
     title: 'Optimisation combinatoire et algorithmes gloutons',
     notions: ['Survol du NP-complet', 'Dijkstra', 'A*', "Sélection d'activités", 'Prim', 'Couverture de sommets'],
     sections: [
-      { id: 'w8-np-complet', title: "Introduction à l'optimisation combinatoire et au NP-complet" },
-      { id: 'w8-dijkstra', title: 'Dijkstra' },
-      { id: 'w8-astar', title: 'A*' },
-      { id: 'w8-glouton-classiques', title: "Sélection d'activités, Prim et couverture de sommets" },
+      {
+        id: 'w8-np-complet',
+        title: "Introduction à l'optimisation combinatoire et au NP-complet",
+        content: 'w8-np-complet',
+      },
+      { id: 'w8-dijkstra', title: 'Dijkstra', content: 'w8-dijkstra', viz: 'dijkstra' },
+      { id: 'w8-astar', title: 'A*', content: 'w8-astar', viz: 'astar' },
+      {
+        id: 'w8-glouton-classiques',
+        title: "Sélection d'activités, Prim et couverture de sommets",
+        content: 'w8-glouton-classiques',
+        viz: 'activites',
+      },
     ],
   },
   {

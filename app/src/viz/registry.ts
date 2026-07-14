@@ -14,6 +14,9 @@ import RBDeleteViz from './RBDeleteViz'
 import HashViz from './HashViz'
 import { BFSViz, DFSViz } from './GraphTraversalViz'
 import EulerViz from './EulerViz'
+import DijkstraViz from './DijkstraViz'
+import AStarViz from './AStarViz'
+import ActivityViz from './ActivityViz'
 
 const registry: Record<string, ComponentType> = {
   croissance: GrowthViz,
@@ -34,6 +37,9 @@ const registry: Record<string, ComponentType> = {
   bfs: BFSViz,
   dfs: DFSViz,
   euler: EulerViz,
+  dijkstra: DijkstraViz,
+  astar: AStarViz,
+  activites: ActivityViz,
 }
 
 export function getViz(key: string): ComponentType | undefined {
